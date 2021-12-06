@@ -13,36 +13,36 @@
 
 ## User Stories
 
-As a user
-So that I can see all my bookmarks
+As a user,
+So that I can see all my bookmarks,
 I'd like to see a list of my bookmarks.
 
-As a user
-So that I can see all my bookmarks
+As a user,
+So that I can see all my bookmarks,
 I'd like to add a new bookmark.
 
-As a user
-So that I can edit my bookmarks
+As a user,
+So that I can edit my bookmarks,
 I'd like to be able to delete bookmarks.
 
-As a user
-So that I can edit my bookmarks
+As a user,
+So that I can edit my bookmarks,
 I'd like to be able to update bookmarks.
 
-As a user
-So that I can add additional information
+As a user,
+So that I can add additional information,
 I'd like to comment on bookmarks.
 
-As a user
-So that I can organise my bookmarks
+As a user,
+So that I can organise my bookmarks,
 I'd like to be able to tag bookmarks into categories.
 
-As a user
-So that I can find relevant bookmarks
+As a user,
+So that I can find relevant bookmarks,
 I'd like to be able to filter bookmarks by tag.
 
-As a manager
-So that I can prevent users from accessing other users bookmarks
+As a manager,
+So that I can prevent users from accessing other users bookmarks, 
 I'd like to be able to restrict users to manage only their own bookmarks.
 
 ## Domain Modelling 
