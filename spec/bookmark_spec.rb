@@ -12,4 +12,14 @@ describe Bookmark do
     expect(Bookmark.all).to include 'http://www.makersacademy.com/'
     expect(Bookmark.all).to include 'http://www.destroyallsoftware.com'
   end
+
+  describe '.add_bookmark' do
+    it 'should add a new bookmark' do
+      connection = PG.connect(dbname: 'bookmark_manager_test')
+
+      Bookmark.add_bookmark('www.google.com')
+
+      expect(Bookmark.all).to include 'www.google.com'
+    end
+  end
 end 
