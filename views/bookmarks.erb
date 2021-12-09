@@ -1,7 +1,8 @@
 <div>
   <h1>Add a new bookmark</h1>
   <form action='/add-bookmark' method='POST'>
-    <input type="text" name="new_bookmark" placeholder="url" />
+    <input type="text" name="title" placeholder="title" />
+    <input type="text" name="url" placeholder="url" />
     <input type="submit" value="Submit" />
   </form>
 </div>
@@ -9,7 +10,11 @@
   <h1>Bookmarks</h1>
   <ul>
     <% @bookmark_1.each do |bookmark| %>
-      <li><%= bookmark %></li>
+      <li>
+        <a href="<%= bookmark.url %>">
+          <%= bookmark.title %>
+        </a>
+      </li>
     <% end %>
   </ul>
 </div>
