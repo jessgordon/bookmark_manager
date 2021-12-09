@@ -26,7 +26,7 @@ So that I can edit my bookmarks,
 I'd like to be able to delete bookmarks.
 
 As a user,
-So that I can edit my bookmarks,
+So that I can change my bookmarks,
 I'd like to be able to update bookmarks.
 
 As a user,
