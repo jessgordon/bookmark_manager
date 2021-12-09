@@ -29,4 +29,12 @@ describe Bookmark do
       expect(bookmark.url).to eq 'www.google.com'
     end
   end
+
+  describe '.delete bookmark'do
+    it 'deletes a bookmarks' do
+      bookmark = Bookmark.add_bookmark(url: 'www.google.com', title: 'Google Search')
+      Bookmark.delete_bookmark(id: bookmark.id)
+      expect(Bookmark.all).to match_array([])
+    end
+  end
 end 
