@@ -12,7 +12,7 @@ feature 'updating a bookmark' do
     fill_in('title', with: 'Ask Jeeves')
     click_button('Submit')
 
-    expect(current_path).to eq "/bookmarks/"
+    expect(current_path).to eq "/bookmarks"
     expect(page).not_to have_link('Google Search', href: 'www.google.com')
     expect(page).to have_link('Ask Jeeves', href: 'www.askjeeves.com')
   end
