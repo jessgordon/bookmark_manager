@@ -11,6 +11,8 @@ gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'webrick', '~> 1.7'
 gem 'pg'
+gem 'uri'
+gem 'sinatra-flash'
 
 group :test do
   gem 'capybara'
