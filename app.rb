@@ -18,13 +18,12 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/bookmarks' do
-    # flash[:notice] = "Invalid url"
+    flash[:notice] = "Invalid url"
     @bookmark_1 = Bookmark.all
     erb :bookmarks
   end
 
   post '/add-bookmark' do
-    flash[:notice] = "Invalid url"
     Bookmark.add_bookmark(url: params[:url], title: params[:title])
     redirect '/bookmarks'
   end
